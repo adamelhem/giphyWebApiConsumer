@@ -14,10 +14,10 @@
     "C:\\Users\\adamelhem\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\nlog\\5.0.1\\nlog.5.0.1.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\nlog.extensions.logging\\5.0.1\\nlog.extensions.logging.5.0.1.nupkg.sha512",
-    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512"
   ],
   "logs": []
 }
