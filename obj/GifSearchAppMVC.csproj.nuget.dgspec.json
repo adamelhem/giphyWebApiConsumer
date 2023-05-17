@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adamelhem\\source\\repos\\GifSearchAppMVC\\GifSearchAppMVC.csproj": {}
+    "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\GifSearchAppMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adamelhem\\source\\repos\\GifSearchAppMVC\\GifSearchAppMVC.csproj": {
+    "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\GifSearchAppMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adamelhem\\source\\repos\\GifSearchAppMVC\\GifSearchAppMVC.csproj",
+        "projectUniqueName": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\GifSearchAppMVC.csproj",
         "projectName": "GifSearchAppMVC",
-        "projectPath": "C:\\Users\\adamelhem\\source\\repos\\GifSearchAppMVC\\GifSearchAppMVC.csproj",
+        "projectPath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\GifSearchAppMVC.csproj",
         "packagesPath": "C:\\Users\\adamelhem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adamelhem\\source\\repos\\GifSearchAppMVC\\obj\\",
+        "outputPath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -31,7 +31,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\Logger\\Logger.csproj": {
+                "projectPath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\Logger\\Logger.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -82,6 +86,89 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\Logger\\Logger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\Logger\\Logger.csproj",
+        "projectName": "Logger",
+        "projectPath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\Logger\\Logger.csproj",
+        "packagesPath": "C:\\Users\\adamelhem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\Logger\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\adamelhem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "targetAlias": "netcoreapp3.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "targetAlias": "netcoreapp3.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

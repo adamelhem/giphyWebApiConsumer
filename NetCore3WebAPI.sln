@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GifSearchAppMVC", "GifSearchAppMVC.csproj", "{5082356C-F204-4867-AF54-AA2DF261D8B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger", "Logger\Logger.csproj", "{B80D07B7-359D-4341-8BF7-063BEE89D0BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5082356C-F204-4867-AF54-AA2DF261D8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5082356C-F204-4867-AF54-AA2DF261D8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5082356C-F204-4867-AF54-AA2DF261D8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5082356C-F204-4867-AF54-AA2DF261D8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80D07B7-359D-4341-8BF7-063BEE89D0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80D07B7-359D-4341-8BF7-063BEE89D0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80D07B7-359D-4341-8BF7-063BEE89D0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80D07B7-359D-4341-8BF7-063BEE89D0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0220030-2737-42E3-9F74-D02F4E2F5B3A}
+	EndGlobalSection
+EndGlobal
