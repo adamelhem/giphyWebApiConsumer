@@ -7,7 +7,7 @@ using DTO.Response;
 
 namespace BusinessLayer
 {
-    public class GiphyBL
+    public class GiphyBL : IGiphyBL
     {
         private readonly IMapper _mapper;
         public GiphyBL(IMapper mapper)

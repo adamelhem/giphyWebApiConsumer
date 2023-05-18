@@ -1,11 +1,12 @@
 ﻿using AutoMapper;
 using BusinessLayer;
 using DataAccessLayer;
-using GifSearchAppMVC.APIdata;
+using DO;
 using GifSearchAppMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json;
+using System;
 using System.Diagnostics;
 using System.Net;
 using static System.Net.Mime.MediaTypeNames;
@@ -17,9 +18,12 @@ namespace GifSearchAppMVC.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IMemoryCache _memoryCache;
         private readonly IMapper _autoMapper;
+        private readonly IGiphyBL _giphyBL;
+        
 
-        public HomeController(ILogger<HomeController> logger, IMemoryCache memoryCache, IMapper autoMapper)
+        public HomeController(IGiphyBL giphyBL, ILogger<HomeController> logger, IMemoryCache memoryCache, IMapper autoMapper)
         {
+            _giphyBL = giphyBL;
             _logger = logger;
             _memoryCache = memoryCache;
             _autoMapper = autoMapper;
@@ -44,23 +48,12 @@ namespace GifSearchAppMVC.Controllers
         [HttpPost]
         public async Task<IActionResult> GetGifUrls(string word)
         {
-            return await GetSearchWordImages(word);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> GetTrendingUrls(string word)
-        {
-            return await GetTrendingImages(word);
-        }
-
-        private async Task<IActionResult> GetTrending(string word)
-        {
             if (string.IsNullOrWhiteSpace(word))
             {
                 return BadRequest();
             }
 
-            var cacheKey = $"{nameof(HomeController)}{nameof(GetTrending)}";
+            var cacheKey = $"{nameof(HomeController)}{nameof(GetGifUrls)}{word}";
             var cacheRec = _memoryCache.Get(cacheKey);
 
             if (cacheRec != null)
@@ -68,42 +61,32 @@ namespace GifSearchAppMVC.Controllers
                 return Ok(cacheRec);
             }
 
-
-            var result = await new GiphyBL().GetSearchWordImages(word);
-
-            var returnObject = Ok(result);
-            _memoryCache.Set(cacheKey, returnObject, DateTime.Now.AddMinutes(3));
-            return returnObject;
-
-        }
-
-        private async Task<OkObjectResult> GetTrendingImages(string url, string word)
-        {
-            return await Task.Run(async () =>
+            var result = await _giphyBL.GetTrendingImagesUrls();
+            if (!result.IsSuccess)
             {
-                var response = new WebAPIhandler().GetAPIdataResponse<TrendingResponse>(url);
-                var images = response?.data?.Select(x => x.images?.original?.url);
-                if (images?.Any() == true)
-                {
-                    _memoryCache.Set(word, images, DateTime.Now.AddMinutes(3));
-                }
-                return Ok(images);
-            });
-        }
-        private async Task<OkObjectResult> GetSearchWordImages(string url, string word)
-        {
-            return await Task.Run(async () =>
+                return BadRequest();
+            }
+
+            var response = Ok(result);
+            if (result?.data?.Any() == true)
             {
-                var response = new WebAPIhandler().GetAPIdataResponse<TrendingResponse>(url);
-                var images = response?.data?.Select(x => x.images?.original?.url);
-                if (images?.Any() == true)
-                {
-                    _memoryCache.Set(word, images, DateTime.Now.AddMinutes(3));
-                }
-                return Ok(images);
-            });
+                _memoryCache.Set(word, response, DateTime.Now.AddMinutes(3));
+            }
+
+            return response;
         }
 
+        [HttpPost]
+        [ResponseCache(Duration = 5, Location = ResponseCacheLocation.Any, NoStore = false)]
+        public async Task<IActionResult> GetTrendingUrls()
+        {
+            var result = await _giphyBL.GetTrendingImagesUrls();
+            if(!result.IsSuccess)
+            {
+                return BadRequest();
+            }
+            return Ok(result);
+        }
 
     }
 }
