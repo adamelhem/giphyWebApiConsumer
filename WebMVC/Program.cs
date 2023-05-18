@@ -1,16 +1,31 @@
+using AutoMapper;
+using DTO;
 using GifSearchAppMVC.Fillters;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+
+// Auto Mapper Configurations
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new AutoMapperProfile());
+    mc.AllowNullCollections = true;
+});
+
+var  mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
 
 builder.Services.AddMvc(options =>
 {
     options.Filters.Add<ExceptionFilter>();
 });
 
-AddServices(builder);
+builder.Services.AddControllersWithViews();
+
+
+
+AddServicesContracts(builder);
 
 var app = builder.Build();
 
@@ -35,7 +50,7 @@ app.MapControllerRoute(
 
 app.Run();
 
-static void AddServices(WebApplicationBuilder builder)
+static void AddServicesContracts(WebApplicationBuilder builder)
 {
     builder.Services.AddScoped<ILogger>();
 }

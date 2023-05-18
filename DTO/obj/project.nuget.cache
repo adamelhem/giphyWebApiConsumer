@@ -1,9 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "CM/QlmTlfirY+NaboVyr1bD0GCvM2sG6Nel+cQrKP+i/TmWI0/oA/RMUdtoFKLtTEbs+VgwJzrTusE/DSJK3DQ==",
+  "dgSpecHash": "VrYJR8eG8EkcOBq+hnXobByzdJa+6KgLqzgQFMnc9TYeYqLtjCXyn5rA992kz6EEL6f4aR/Cb2GgX2YKJdbQlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\DTO\\DTO.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\adamelhem\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
