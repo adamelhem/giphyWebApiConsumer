@@ -9,7 +9,7 @@ namespace DTO
         public AutoMapperProfile()
         {
             CreateMap<TrendingJsonResponse, GiphyResponse>(MemberList.None)
-                .ForMember(dest => dest, o => o.MapFrom<IEnumerable<string>>(src => extractImagesUrl(src)))
+                .ForMember(dest => dest.imagesUrls, o => o.MapFrom<IEnumerable<string>>(src => extractImagesUrl(src)))
                 .ReverseMap();
         }
 
