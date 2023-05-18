@@ -8,18 +8,17 @@
 
 <form class="align-content-center">
     <div class="login">
-        <input type="text" id="word" name="word" pattern="[A-Za-z]{1,}" placeholder="הזן טקס חיפוש או השאר ריק לטרנד" required>
+        <input type="text" id="word" name="word" placeholder="הזן טקס חיפוש" required>
         <br />
         <input type="button" id="search" value="חפש">
+        <input type="button" id="trending" value="טרנדנג">
     </div>
 </form>
 
 <script type="text/javascript">
-
-    $('#search').click(function () {
-
+    $('#search').click(function () 
+    {
         var wordText = $("#word").val();
-
         $.ajax({
             url: '/Home/GetGifUrls?word=' + wordText,
             type: 'POST',
@@ -32,7 +31,21 @@
                 alert('error');
             }
         });
-
     });
 
+    $('#trending').click(function () 
+    {
+        $.ajax({
+            url: '/Home/GetTrendingUrls',
+            type: 'POST',
+            dataType: 'json',
+            data: { id: 'value' },
+            success: function (data) {
+                alert("success:" + data);
+            },
+            error: function () {
+                alert('error');
+            }
+        });
+    });
 </script> 
