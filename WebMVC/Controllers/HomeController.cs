@@ -1,4 +1,5 @@
-﻿using GifSearchAppMVC.APIdata;
+﻿using AutoMapper;
+using GifSearchAppMVC.APIdata;
 using GifSearchAppMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
@@ -12,11 +13,13 @@ namespace GifSearchAppMVC.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IMemoryCache _memoryCache;
+        private readonly IMapper _autoMapper;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IMemoryCache memoryCache, IMapper autoMapper)
         {
             _logger = logger;
-            _memoryCache = new MemoryCache(new MemoryCacheOptions() { });
+            _memoryCache = memoryCache;
+            _autoMapper = autoMapper;
         }
 
         public IActionResult Index()
@@ -34,7 +37,6 @@ namespace GifSearchAppMVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        
         
         [HttpPost]
         public async Task<IActionResult> GetGifUrls(string word)

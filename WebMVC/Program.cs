@@ -1,6 +1,7 @@
 using AutoMapper;
 using DTO;
 using GifSearchAppMVC.Fillters;
+using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,10 @@ var mapperConfig = new MapperConfiguration(mc =>
 
 var  mapper = mapperConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
+
+
+var memoryCache = new MemoryCache(new MemoryCacheOptions() { });
+builder.Services.AddSingleton(memoryCache);
 
 builder.Services.AddMvc(options =>
 {
