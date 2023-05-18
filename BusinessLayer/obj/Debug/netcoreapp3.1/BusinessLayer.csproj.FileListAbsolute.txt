@@ -1,0 +1,5 @@
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache

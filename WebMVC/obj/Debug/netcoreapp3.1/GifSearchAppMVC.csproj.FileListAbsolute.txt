@@ -1,0 +1,8 @@
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\netcoreapp3.1\GifSearchAppMVC.csproj.AssemblyReference.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\netcoreapp3.1\GifSearchAppMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\netcoreapp3.1\GifSearchAppMVC.AssemblyInfoInputs.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\netcoreapp3.1\GifSearchAppMVC.AssemblyInfo.cs
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\netcoreapp3.1\GifSearchAppMVC.csproj.CoreCompileInputs.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\netcoreapp3.1\GifSearchAppMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\netcoreapp3.1\GifSearchAppMVC.RazorAssemblyInfo.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\netcoreapp3.1\GifSearchAppMVC.RazorAssemblyInfo.cs

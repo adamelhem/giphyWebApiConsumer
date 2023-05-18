@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ImI6zRZzjmEEJ05tvMDQqDmgVGp1i496d/hzkEPK5B58XFuxK7BoVkH/YZlr/2JZT21HF4F71n+Z9HLsHjUyfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\DataAccessLayer\\DataAccessLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

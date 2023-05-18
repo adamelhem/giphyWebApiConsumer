@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "Wbo2dVHwgXutk8jwrm2qBfEXDGYagdVwZtWqinaS8hwFnQE2gZMrp12ye17E63CbmfaGaakb/cijnSsY2AqSqw==",
-  "success": false,
+  "dgSpecHash": "FPRLe2yXd1q8zZITxKERsuob9s2CmNU7ACTcAPUzn225aDY+xwXa4cdHwLvlkYJd7hwc7jrtF4Xs1YsYIzluuw==",
+  "success": true,
   "projectFilePath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\WebMVC\\GifSearchAppMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adamelhem\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
@@ -10,15 +10,5 @@
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\WebMVC\\Logger\\Logger.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\WebMVC\\Logger\\Logger.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

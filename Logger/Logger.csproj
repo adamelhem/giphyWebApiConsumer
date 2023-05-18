@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NLog" Version="5.0.1" />
-    <PackageReference Include="NLog.Extensions.Logging" Version="5.0.1" />
+    <PackageReference Include="NLog" Version="5.1.4" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.2.3" />
   </ItemGroup>
 
 </Project>
