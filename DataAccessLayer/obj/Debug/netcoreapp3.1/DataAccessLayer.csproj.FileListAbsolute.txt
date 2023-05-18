@@ -1,5 +1,0 @@
-C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.AssemblyReference.cache
-C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
-C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
-C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
