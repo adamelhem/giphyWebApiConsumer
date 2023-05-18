@@ -5,6 +5,7 @@ using DTO;
 using GifSearchAppMVC.Fillters;
 using Logger;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -60,7 +61,8 @@ app.Run();
 
 static void AddServicesContracts(WebApplicationBuilder builder)
 {
-    builder.Services.AddScoped<Logger.ILogger, Logger.Logger>();
+    var logger = new Logger.Logger();
+    builder.Services.AddSingleton(logger);
     builder.Services.AddScoped<IGiphyBL, GiphyBL>();
     builder.Services.AddScoped<IWebAPIhandler, WebAPIhandler>();
 }

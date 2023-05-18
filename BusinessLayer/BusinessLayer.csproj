@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NLog" Version="5.1.4" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
     <ProjectReference Include="..\DO\DO.csproj" />
     <ProjectReference Include="..\DTO\DTO.csproj" />

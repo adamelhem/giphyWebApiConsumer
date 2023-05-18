@@ -14,6 +14,8 @@
           "DTO": "1.0.0",
           "DataAccessLayer": "1.0.0",
           "Logger": "1.0.0",
+          "NLog": "5.1.4",
+          "NLog.Extensions.Logging": "5.2.3",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
@@ -116,7 +118,9 @@
         "dependencies": {
           "DO": "1.0.0",
           "DTO": "1.0.0",
-          "DataAccessLayer": "1.0.0"
+          "DataAccessLayer": "1.0.0",
+          "NLog": "5.1.4",
+          "NLog.Extensions.Logging": "5.2.3"
         },
         "runtime": {
           "BusinessLayer.dll": {}
@@ -125,6 +129,8 @@
       "DataAccessLayer/1.0.0": {
         "dependencies": {
           "DO": "1.0.0",
+          "NLog": "5.1.4",
+          "NLog.Extensions.Logging": "5.2.3",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
@@ -133,6 +139,8 @@
       },
       "DO/1.0.0": {
         "dependencies": {
+          "NLog": "5.1.4",
+          "NLog.Extensions.Logging": "5.2.3",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
@@ -143,7 +151,9 @@
         "dependencies": {
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "DO": "1.0.0"
+          "DO": "1.0.0",
+          "NLog": "5.1.4",
+          "NLog.Extensions.Logging": "5.2.3"
         },
         "runtime": {
           "DTO.dll": {}

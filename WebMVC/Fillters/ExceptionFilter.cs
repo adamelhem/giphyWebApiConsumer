@@ -8,7 +8,7 @@ namespace GifSearchAppMVC.Fillters
     {
         private readonly ILogger _logger;
 
-        public ExceptionFilter(ILogger logger)
+        public ExceptionFilter(ILogger<ExceptionFilter>  logger)
         {
             _logger = logger;
         }

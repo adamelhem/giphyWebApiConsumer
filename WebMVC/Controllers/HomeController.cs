@@ -60,7 +60,7 @@ namespace GifSearchAppMVC.Controllers
                 return Ok(cacheRec);
             }
 
-            var result = await _giphyBL.GetTrendingImagesUrls();
+            var result = await _giphyBL.GetSearchWordImages(word);
             if (!result.IsSuccess)
             {
                 return BadRequest();

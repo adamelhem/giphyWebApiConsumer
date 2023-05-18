@@ -107,3 +107,12 @@ C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\n
 C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\DO.dll
 C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\DO.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\NLog.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\TestProject\bin\Debug\net6.0\NLog.Extensions.Logging.dll

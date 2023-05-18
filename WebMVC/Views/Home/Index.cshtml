@@ -12,6 +12,7 @@
         <br />
         <input type="button" id="search" value="חפש">
         <input type="button" id="trending" value="טרנדנג">
+        <div id="theDiv"></div>
     </div>
 </form>
 
@@ -24,8 +25,9 @@
             type: 'POST',
             dataType: 'json',
             data: { id: 'value' },
-            success: function(data) {
-                alert("success:" + data);
+            success: function (data) {
+                var list = data.data;
+                list.forEach(element => $('#theDiv').prepend('<img src="' + element + '" />'));
             },
             error: function() {
                 alert('error');
@@ -41,7 +43,8 @@
             dataType: 'json',
             data: { id: 'value' },
             success: function (data) {
-                alert("success:" + data);
+                var list = data.data;
+                list.forEach(element => $('#theDiv').prepend('<img src="' + element + '" />'));
             },
             error: function () {
                 alert('error');

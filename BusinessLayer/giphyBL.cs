@@ -21,7 +21,7 @@ namespace BusinessLayer
         public async Task<IReturnObject<List<string>>> GetSearchWordImages(string searchWord)
         {
             var result = await _webAPIhandler.GetAPIdataResponse<TrendingJsonResponse>(new GiphySearchRequest(searchWord));
-            if (result != null)
+            if (result == null)
             {
                 var failResult = new ReturnObject<List<string>>();
                 return failResult.setError();
@@ -35,7 +35,7 @@ namespace BusinessLayer
         {
 
             var result = await _webAPIhandler.GetAPIdataResponse<TrendingJsonResponse>(new GiphyTrendingRequest());
-            if (result != null)
+            if (result == null)
             {
                 var failResult = new ReturnObject<List<string>>();
                 return failResult.setError();
