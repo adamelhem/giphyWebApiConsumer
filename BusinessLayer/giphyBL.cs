@@ -10,14 +10,17 @@ namespace BusinessLayer
     public class GiphyBL : IGiphyBL
     {
         private readonly IMapper _mapper;
-        public GiphyBL(IMapper mapper)
+        private readonly IWebAPIhandler _webAPIhandler;
+
+        public GiphyBL(IMapper mapper, IWebAPIhandler webAPIhandler)
         {
             _mapper = mapper;
+            _webAPIhandler = webAPIhandler;
         }
 
         public async Task<IReturnObject<List<string>>> GetSearchWordImages(string searchWord)
         {
-            var result = await new WebAPIhandler().GetAPIdataResponse<TrendingJsonResponse>(new GiphySearchRequest(searchWord));
+            var result = await _webAPIhandler.GetAPIdataResponse<TrendingJsonResponse>(new GiphySearchRequest(searchWord));
             if (result != null)
             {
                 var failResult = new ReturnObject<List<string>>();
@@ -31,7 +34,7 @@ namespace BusinessLayer
         public async Task<IReturnObject<List<string>>> GetTrendingImagesUrls()
         {
 
-            var result = await new WebAPIhandler().GetAPIdataResponse<TrendingJsonResponse>(new GiphyTrendingRequest());
+            var result = await _webAPIhandler.GetAPIdataResponse<TrendingJsonResponse>(new GiphyTrendingRequest());
             if (result != null)
             {
                 var failResult = new ReturnObject<List<string>>();

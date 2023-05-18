@@ -4,7 +4,7 @@ using System.Net;
 
 namespace DataAccessLayer
 {
-    public class WebAPIhandler
+    public class WebAPIhandler : IWebAPIhandler
     {
         public async Task<T> GetAPIdataResponse<T>(IGiphyRequest urlRequest)
         {

@@ -41,3 +41,7 @@ C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\net6.0
 C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\net6.0\GifSearchAppMVC.pdb
 C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\net6.0\GifSearchAppMVC.genruntimeconfig.cache
 C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\obj\Debug\net6.0\ref\GifSearchAppMVC.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\bin\Debug\net6.0\NLog.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\bin\Debug\net6.0\Logger.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\WebMVC\bin\Debug\net6.0\Logger.pdb

@@ -1,6 +1,9 @@
 using AutoMapper;
+using BusinessLayer;
+using DataAccessLayer;
 using DTO;
 using GifSearchAppMVC.Fillters;
+using Logger;
 using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -57,5 +60,7 @@ app.Run();
 
 static void AddServicesContracts(WebApplicationBuilder builder)
 {
-    builder.Services.AddScoped<ILogger>();
+    builder.Services.AddScoped<Logger.ILogger, Logger.Logger>();
+    builder.Services.AddScoped<IGiphyBL, GiphyBL>();
+    builder.Services.AddScoped<IWebAPIhandler, WebAPIhandler>();
 }
