@@ -168,7 +168,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1"
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "DO": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DTO.dll": {}
@@ -553,6 +554,15 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Newtonsoft.Json from 13.0.1 to 12.0.1. Reference the package directly from the project to select a different version. \r\n GifSearchAppMVC -> DTO -> DO -> Newtonsoft.Json (>= 13.0.1) \r\n GifSearchAppMVC -> Newtonsoft.Json (>= 12.0.1)",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1605",
       "level": "Error",

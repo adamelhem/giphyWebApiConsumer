@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gzjqN0BHdLYrsa2Jol1YjheyWhl7t9UGI0dEjNKG7OnmzTljMkRzhz4wMcrKNZOaPROROAi3nN5Mfjb0dWgPCA==",
+  "dgSpecHash": "1sVrW0+wVFHprQVxIjb8Sqy0EcGLWGoHhLffLVXHni6DBQMEKMEDuFB/Vchi/TBx//NxEMD3W6Ur0yf7H7JbHQ==",
   "success": false,
   "projectFilePath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\WebMVC\\GifSearchAppMVC.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,15 @@
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Newtonsoft.Json from 13.0.1 to 12.0.1. Reference the package directly from the project to select a different version. \r\n GifSearchAppMVC -> DTO -> DO -> Newtonsoft.Json (>= 13.0.1) \r\n GifSearchAppMVC -> Newtonsoft.Json (>= 12.0.1)",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1605",
       "level": "Error",

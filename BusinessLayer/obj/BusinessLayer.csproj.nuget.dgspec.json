@@ -276,7 +276,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\DO\\DO.csproj": {
+                "projectPath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\DO\\DO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
