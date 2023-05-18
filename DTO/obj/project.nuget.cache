@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "CM/QlmTlfirY+NaboVyr1bD0GCvM2sG6Nel+cQrKP+i/TmWI0/oA/RMUdtoFKLtTEbs+VgwJzrTusE/DSJK3DQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\DTO\\DTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

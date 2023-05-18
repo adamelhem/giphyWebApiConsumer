@@ -65,25 +65,30 @@ namespace GifSearchAppMVC.Controllers
 
             return await Task.Run(async () =>
             {
-                var jsonResponse = string.Empty;
-                var request = (HttpWebRequest)WebRequest.Create(url);
-                request.AutomaticDecompression = DecompressionMethods.GZip;
-
-                using (var response = (HttpWebResponse)request.GetResponse())
-                using (var stream = response.GetResponseStream())
-                using (var reader = new StreamReader(stream))
-                {
-                    jsonResponse = reader.ReadToEnd();
-                }
-                var myDeserializedClass = JsonConvert.DeserializeObject<TrendingResponse>(jsonResponse);
-
-                var images = myDeserializedClass?.data?.Select(x=>x.images?.original?.url);
-                if (images?.Count()>0)
+                var response = GetAPIdataResponse<TrendingResponse>(url);
+                var images = response?.data?.Select(x => x.images?.original?.url);
+                if (images?.Any() == true)
                 {
                     _memoryCache.Set(word, images, DateTime.Now.AddMinutes(3));
                 }
                 return Ok(images);
             });
+
         }
+
+        private static T GetAPIdataResponse<T>(string url)
+        {
+            var jsonResponse = string.Empty;
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            request.AutomaticDecompression = DecompressionMethods.GZip;
+            using (var response = (HttpWebResponse)request.GetResponse())
+            using (var stream = response.GetResponseStream())
+            using (var reader = new StreamReader(stream))
+            {
+                jsonResponse = reader.ReadToEnd();
+            }
+            return JsonConvert.DeserializeObject<T>(jsonResponse);
+        }
+
     }
 }

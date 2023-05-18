@@ -1,0 +1,12 @@
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\bin\Debug\net6.0\DO.deps.json
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\bin\Debug\net6.0\DO.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\bin\Debug\net6.0\DO.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\obj\Debug\net6.0\DO.csproj.AssemblyReference.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\obj\Debug\net6.0\DO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\obj\Debug\net6.0\DO.AssemblyInfoInputs.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\obj\Debug\net6.0\DO.AssemblyInfo.cs
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\obj\Debug\net6.0\DO.csproj.CoreCompileInputs.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\obj\Debug\net6.0\DO.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\obj\Debug\net6.0\refint\DO.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\obj\Debug\net6.0\DO.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DO\obj\Debug\net6.0\ref\DO.dll

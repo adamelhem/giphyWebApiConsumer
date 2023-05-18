@@ -1,7 +1,16 @@
+using GifSearchAppMVC.Fillters;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddMvc(options =>
+{
+    options.Filters.Add<ExceptionFilter>();
+});
+
+AddServices(builder);
 
 var app = builder.Build();
 
@@ -25,3 +34,8 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+static void AddServices(WebApplicationBuilder builder)
+{
+    builder.Services.AddScoped<ILogger>();
+}

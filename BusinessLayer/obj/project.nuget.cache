@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "n8HS0wClSmwZS3NVOmpK5ad0M3yb0ZtzYNwR2jvJ/utzKiVUnTXgXb0bTyuHXAmQimbj5I18TOcH5X9ShbA6Yw==",
+  "dgSpecHash": "Fy0q0VpUx42W+BkQIAJRHl3iIypHKcnVEls76Nqx8qkMoeGWCw0uXChm5GyK/xiea6m+rw/fZWGgiu9v1p01Lg==",
   "success": true,
   "projectFilePath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
   ],
   "logs": []
 }

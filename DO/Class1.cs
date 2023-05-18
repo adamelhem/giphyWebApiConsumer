@@ -1,4 +1,4 @@
-﻿namespace DataAccessLayer
+﻿namespace DO
 {
     public class Class1
     {
