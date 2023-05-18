@@ -1,20 +1,45 @@
-﻿using DataAccessLayer;
+﻿using AutoMapper;
+using DataAccessLayer;
+using DO;
+using DO.Request;
+using DO.Response;
 using DTO.Response;
-using System;
 
 namespace BusinessLayer
 {
     public class GiphyBL
     {
-    public Task<IReturnObject<List<string>>> GetSearchWordImages(string searchWord)
+        private readonly IMapper _mapper;
+        public GiphyBL(IMapper mapper)
         {
-           var url = @"https://api.giphy.com/v1/gifs/search?api_key=ikitTARik6QXdfjX6K4sb2G3nqMxPMkG&q=" + word + @"&limit=25&offset=0&rating=g&lang=en";
-            return await new WebAPIhandler().GetSearchWordImages(searchWord);
+            _mapper = mapper;
         }
 
-        public Task<IReturnObject<List<string>>> GetTrendingImagesUrls()
+        public async Task<IReturnObject<List<string>>> GetSearchWordImages(string searchWord)
         {
-            throw new NotImplementedException();
+            var result = await new WebAPIhandler().GetAPIdataResponse<TrendingJsonResponse>(new GiphySearchRequest(searchWord));
+            if (result != null)
+            {
+                var failResult = new ReturnObject<List<string>>();
+                return failResult.setError();
+            }
+            var success = new ReturnObject<List<string>>();
+            var dataResult = _mapper.Map<GiphyResponse>(result);
+            return success.setSuccess(dataResult.imagesUrls);
+        }
+
+        public async Task<IReturnObject<List<string>>> GetTrendingImagesUrls()
+        {
+
+            var result = await new WebAPIhandler().GetAPIdataResponse<TrendingJsonResponse>(new GiphyTrendingRequest());
+            if (result != null)
+            {
+                var failResult = new ReturnObject<List<string>>();
+                return failResult.setError();
+            }
+            var success = new ReturnObject<List<string>>();
+            var dataResult = _mapper.Map<GiphyResponse>(result);
+            return success.setSuccess(dataResult.imagesUrls);
         }
 
     }

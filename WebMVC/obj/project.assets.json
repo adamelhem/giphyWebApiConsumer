@@ -125,6 +125,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "DO": "1.0.0",
           "DTO": "1.0.0",
           "DataAccessLayer": "1.0.0"
         },
@@ -139,6 +140,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "DO": "1.0.0",
           "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
@@ -146,6 +148,19 @@
         },
         "runtime": {
           "bin/placeholder/DataAccessLayer.dll": {}
+        }
+      },
+      "DO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/DO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DO.dll": {}
         }
       },
       "DTO/1.0.0": {
@@ -408,6 +423,11 @@
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     },
+    "DO/1.0.0": {
+      "type": "project",
+      "path": "../DO/DO.csproj",
+      "msbuildProject": "../DO/DO.csproj"
+    },
     "DTO/1.0.0": {
       "type": "project",
       "path": "../DTO/DTO.csproj",
@@ -531,5 +551,25 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Newtonsoft.Json from 13.0.1 to 12.0.1. Reference the package directly from the project to select a different version. \r\n GifSearchAppMVC -> BusinessLayer -> DO -> Newtonsoft.Json (>= 13.0.1) \r\n GifSearchAppMVC -> Newtonsoft.Json (>= 12.0.1)",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Newtonsoft.Json from 13.0.1 to 12.0.1. Reference the package directly from the project to select a different version. \r\n GifSearchAppMVC -> DataAccessLayer -> DO -> Newtonsoft.Json (>= 13.0.1) \r\n GifSearchAppMVC -> Newtonsoft.Json (>= 12.0.1)",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

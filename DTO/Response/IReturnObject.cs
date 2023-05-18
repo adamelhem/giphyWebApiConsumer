@@ -7,8 +7,9 @@
         int returnCode { get; set; }
         string? returnMessage { get; set; }
 
-        void setError(int errorReturnCode = -1, string errorReturnMessage = "error");
-        void setError(string errorReturnMessage = "error", int errorReturnCode = -1);
-        void setSuccess(T? returnDataValue = null);
+        IReturnObject<T> setError();
+        IReturnObject<T> setError(int errorReturnCode = -1, string errorReturnMessage = "error");
+        IReturnObject<T> setError(string errorReturnMessage = "error", int errorReturnCode = -1);
+        IReturnObject<T> setSuccess(T? returnDataValue = null);
     }
 }

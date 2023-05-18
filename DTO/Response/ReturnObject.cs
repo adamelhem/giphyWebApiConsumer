@@ -8,21 +8,31 @@
         public string? returnMessage { get; set; }
         public T? data { get; set; }
 
-        public void setSuccess(T? returnDataValue = null)
+        public IReturnObject<T> setSuccess(T? returnDataValue = null)
         {
             data = returnDataValue;
+            return this;
         }
 
-        public void setError(string errorReturnMessage = "error", int errorReturnCode = -1)
+        public IReturnObject<T> setError()
+        {
+            returnMessage = "error";
+            returnCode = -1;
+            return this;
+        }
+
+        public IReturnObject<T> setError(string errorReturnMessage = "error", int errorReturnCode = -1)
         {
             returnMessage = errorReturnMessage;
             returnCode = errorReturnCode;
+            return this;
         }
 
-        public void setError(int errorReturnCode = -1, string errorReturnMessage = "error")
+        public IReturnObject<T> setError(int errorReturnCode = -1, string errorReturnMessage = "error")
         {
             returnMessage = errorReturnMessage;
             returnCode = errorReturnCode;
+            return this;
         }
 
     }

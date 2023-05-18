@@ -14,6 +14,19 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "DO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/DO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DO.dll": {}
+        }
       }
     }
   },
@@ -56,10 +69,16 @@
         "newtonsoft.json.12.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec"
       ]
+    },
+    "DO/1.0.0": {
+      "type": "project",
+      "path": "../DO/DO.csproj",
+      "msbuildProject": "../DO/DO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DO >= 1.0.0",
       "Newtonsoft.Json >= 12.0.1"
     ]
   },
@@ -94,7 +113,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\DO\\DO.csproj": {
+              "projectPath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\DO\\DO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -145,5 +168,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Newtonsoft.Json from 13.0.1 to 12.0.1. Reference the package directly from the project to select a different version. \r\n DataAccessLayer -> DO -> Newtonsoft.Json (>= 13.0.1) \r\n DataAccessLayer -> Newtonsoft.Json (>= 12.0.1)",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

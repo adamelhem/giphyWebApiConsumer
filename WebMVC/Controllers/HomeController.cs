@@ -68,12 +68,6 @@ namespace GifSearchAppMVC.Controllers
                 return Ok(cacheRec);
             }
 
-            var url = @"https://api.giphy.com/v1/gifs/trending?api_key=ikitTARik6QXdfjX6K4sb2G3nqMxPMkG&limit=25&rating=g";
-
-            if (!string.IsNullOrWhiteSpace(word))
-            {
-                url = @"https://api.giphy.com/v1/gifs/search?api_key=ikitTARik6QXdfjX6K4sb2G3nqMxPMkG&q=" + word + @"&limit=25&offset=0&rating=g&lang=en";
-            }
 
             var result = await new GiphyBL().GetSearchWordImages(word);
 

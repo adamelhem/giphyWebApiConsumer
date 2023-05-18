@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "s4wi2p8syDU1zHNh3FBykRM5PZjZIhNE5BN3xgz+d9FepWD8gvz4UjqIc+6qJAiWlr4awNSWmMnaA2vyJwGXKQ==",
-  "success": true,
+  "dgSpecHash": "rpXvigSw8mw/IFM7+zKVeaq/xVbex1E6KYZJ7rxzlHelqKirJa+lu+qRMWRAMlX0PAMEuv3VYsgSzmOFT2oetw==",
+  "success": false,
   "projectFilePath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adamelhem\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
@@ -9,5 +9,15 @@
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Newtonsoft.Json from 13.0.1 to 12.0.1. Reference the package directly from the project to select a different version. \r\n DataAccessLayer -> DO -> Newtonsoft.Json (>= 13.0.1) \r\n DataAccessLayer -> Newtonsoft.Json (>= 12.0.1)",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
