@@ -125,7 +125,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "DataAccessLayer": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BusinessLayer.dll": {}

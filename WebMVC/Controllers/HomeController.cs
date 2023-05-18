@@ -8,6 +8,7 @@ using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Net;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace GifSearchAppMVC.Controllers
 {
@@ -54,16 +55,17 @@ namespace GifSearchAppMVC.Controllers
 
         private async Task<IActionResult> GetTrending(string word)
         {
-            if (word == null)
+            if (string.IsNullOrWhiteSpace(word))
             {
-                word = "";
+                return BadRequest();
             }
 
-            var cacheRec = _memoryCache.Get(word);
+            var cacheKey = $"{nameof(HomeController)}{nameof(GetTrending)}";
+            var cacheRec = _memoryCache.Get(cacheKey);
 
             if (cacheRec != null)
             {
-                return Ok(cacheRec as String[]);
+                return Ok(cacheRec);
             }
 
             var url = @"https://api.giphy.com/v1/gifs/trending?api_key=ikitTARik6QXdfjX6K4sb2G3nqMxPMkG&limit=25&rating=g";
@@ -73,7 +75,11 @@ namespace GifSearchAppMVC.Controllers
                 url = @"https://api.giphy.com/v1/gifs/search?api_key=ikitTARik6QXdfjX6K4sb2G3nqMxPMkG&q=" + word + @"&limit=25&offset=0&rating=g&lang=en";
             }
 
-            return await new GiphyBL().GetSearchWordImages(word);
+            var result = await new GiphyBL().GetSearchWordImages(word);
+
+            var returnObject = Ok(result);
+            _memoryCache.Set(cacheKey, returnObject, DateTime.Now.AddMinutes(3));
+            return returnObject;
 
         }
 
