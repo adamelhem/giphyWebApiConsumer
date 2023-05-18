@@ -1,4 +1,8 @@
+using DataAccessLayer;
+using DO;
+using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
 using NUnit.Framework;
+using System.IO;
 
 namespace UtilReflectApiPrintStructObjTestProject
 {
@@ -6,30 +10,23 @@ namespace UtilReflectApiPrintStructObjTestProject
     {
         //private Person _inputData;
         private string _expectedResutl = "\nObject of Class Person\n------------------------------------------\n age == 55  \nObject of Class Name\n------------------------------------------\n lastName == Gates  firstName == Bill  ";
+        private string _ResponseJson;
+        private TrendingJsonResponse _actualResutl;
 
         [SetUp]
         public void Setup()
         {
-
-            //var n = new Name()
-            //{
-            //    firstName = "Bill",
-            //    lastName = "Gates"
-            //};
-
-            // _inputData = new Person()
-            //{
-            //    age = 55,
-            //    name = n
-            //};
-
+            var jsonTestDataFolder = Directory.GetCurrentDirectory();
+            var jsonTestDataFile = "Response.json";
+            var fullPath = Path.Combine(jsonTestDataFolder, jsonTestDataFile);
+            var fileHanlder = new FileHandler();
+            _actualResutl = fileHanlder.LoadJsonFile<TrendingJsonResponse>(fullPath); 
         }
 
         [Test]
-        public void StructObjectsInfoTest()
+        public void TrendingJsonResponseStructureTest()
         {
-            //var actualResutl = new utility().StructObjectsInfo(_inputData).ToString();
-            //Assert.AreEqual(actualResutl, _expectedResutl);
+            Assert.AreEqual(_actualResutl?.data?.Count, 25);
         }
     }
 }

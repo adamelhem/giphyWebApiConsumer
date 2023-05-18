@@ -3,3 +3,17 @@ C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug
 C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
 C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
 C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\bin\Debug\net6.0\DO.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\bin\Debug\net6.0\DTO.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\bin\Debug\net6.0\DO.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\bin\Debug\net6.0\DTO.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll

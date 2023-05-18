@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "1sVrW0+wVFHprQVxIjb8Sqy0EcGLWGoHhLffLVXHni6DBQMEKMEDuFB/Vchi/TBx//NxEMD3W6Ur0yf7H7JbHQ==",
-  "success": false,
+  "dgSpecHash": "FB8fuDm57BBye04BVTSzLHLNRVJvCadMwbna5+522nqvTOKM53qtRD7idYVc/6p+xyOrsK51K7Tmj8OwHJ2i8g==",
+  "success": true,
   "projectFilePath": "C:\\Users\\adamelhem\\source\\repos\\giphyWebApiConsumerFinal\\WebMVC\\GifSearchAppMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adamelhem\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
@@ -10,40 +10,12 @@
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\adamelhem\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\adamelhem\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\adamelhem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Newtonsoft.Json from 13.0.1 to 12.0.1. Reference the package directly from the project to select a different version. \r\n GifSearchAppMVC -> DTO -> DO -> Newtonsoft.Json (>= 13.0.1) \r\n GifSearchAppMVC -> Newtonsoft.Json (>= 12.0.1)",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Newtonsoft.Json from 13.0.1 to 12.0.1. Reference the package directly from the project to select a different version. \r\n GifSearchAppMVC -> BusinessLayer -> DO -> Newtonsoft.Json (>= 13.0.1) \r\n GifSearchAppMVC -> Newtonsoft.Json (>= 12.0.1)",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Newtonsoft.Json from 13.0.1 to 12.0.1. Reference the package directly from the project to select a different version. \r\n GifSearchAppMVC -> DataAccessLayer -> DO -> Newtonsoft.Json (>= 13.0.1) \r\n GifSearchAppMVC -> Newtonsoft.Json (>= 12.0.1)",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

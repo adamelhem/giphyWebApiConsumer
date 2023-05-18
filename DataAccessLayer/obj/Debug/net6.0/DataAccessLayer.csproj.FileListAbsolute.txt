@@ -1,0 +1,15 @@
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\bin\Debug\net6.0\DO.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\bin\Debug\net6.0\DO.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\adamelhem\source\repos\giphyWebApiConsumerFinal\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
