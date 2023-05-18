@@ -19,7 +19,6 @@ namespace GifSearchAppMVC.Controllers
         private readonly IMemoryCache _memoryCache;
         private readonly IMapper _autoMapper;
         private readonly IGiphyBL _giphyBL;
-        
 
         public HomeController(IGiphyBL giphyBL, ILogger<HomeController> logger, IMemoryCache memoryCache, IMapper autoMapper)
         {
