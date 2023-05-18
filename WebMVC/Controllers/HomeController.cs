@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using BusinessLayer;
+using DataAccessLayer;
 using GifSearchAppMVC.APIdata;
 using GifSearchAppMVC.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -37,27 +39,33 @@ namespace GifSearchAppMVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        
+
         [HttpPost]
         public async Task<IActionResult> GetGifUrls(string word)
         {
-            return await GetTrending(word);
+            return await GetSearchWordImages(word);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> GetTrendingUrls(string word)
+        {
+            return await GetTrendingImages(word);
         }
 
         private async Task<IActionResult> GetTrending(string word)
         {
-                if ( word == null)
+            if (word == null)
             {
                 word = "";
             }
 
-                var cacheRec = _memoryCache.Get(word);
-                
-                if (cacheRec != null)
-                {
-                    return Ok(cacheRec as String[]);
-                }
-                 
+            var cacheRec = _memoryCache.Get(word);
+
+            if (cacheRec != null)
+            {
+                return Ok(cacheRec as String[]);
+            }
+
             var url = @"https://api.giphy.com/v1/gifs/trending?api_key=ikitTARik6QXdfjX6K4sb2G3nqMxPMkG&limit=25&rating=g";
 
             if (!string.IsNullOrWhiteSpace(word))
@@ -65,9 +73,15 @@ namespace GifSearchAppMVC.Controllers
                 url = @"https://api.giphy.com/v1/gifs/search?api_key=ikitTARik6QXdfjX6K4sb2G3nqMxPMkG&q=" + word + @"&limit=25&offset=0&rating=g&lang=en";
             }
 
+            return await new GiphyBL().GetSearchWordImages(word);
+
+        }
+
+        private async Task<OkObjectResult> GetTrendingImages(string url, string word)
+        {
             return await Task.Run(async () =>
             {
-                var response = GetAPIdataResponse<TrendingResponse>(url);
+                var response = new WebAPIhandler().GetAPIdataResponse<TrendingResponse>(url);
                 var images = response?.data?.Select(x => x.images?.original?.url);
                 if (images?.Any() == true)
                 {
@@ -75,22 +89,21 @@ namespace GifSearchAppMVC.Controllers
                 }
                 return Ok(images);
             });
-
         }
-
-        private static T GetAPIdataResponse<T>(string url)
+        private async Task<OkObjectResult> GetSearchWordImages(string url, string word)
         {
-            var jsonResponse = string.Empty;
-            var request = (HttpWebRequest)WebRequest.Create(url);
-            request.AutomaticDecompression = DecompressionMethods.GZip;
-            using (var response = (HttpWebResponse)request.GetResponse())
-            using (var stream = response.GetResponseStream())
-            using (var reader = new StreamReader(stream))
+            return await Task.Run(async () =>
             {
-                jsonResponse = reader.ReadToEnd();
-            }
-            return JsonConvert.DeserializeObject<T>(jsonResponse);
+                var response = new WebAPIhandler().GetAPIdataResponse<TrendingResponse>(url);
+                var images = response?.data?.Select(x => x.images?.original?.url);
+                if (images?.Any() == true)
+                {
+                    _memoryCache.Set(word, images, DateTime.Now.AddMinutes(3));
+                }
+                return Ok(images);
+            });
         }
+
 
     }
 }

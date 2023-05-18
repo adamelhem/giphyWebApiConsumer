@@ -2,16 +2,17 @@
 
 namespace BusinessLayer
 {
-    public class giphyBL
+    public class GiphyBL
     {
-        public IReturnObject<List<string>> getImagesUrls(string searchWord)
+        public Task<IReturnObject<List<string>>> GetSearchWordImages(string searchWord)
         {
             throw new NotImplementedException();
         }
 
-        public IReturnObject<List<string>> getTrendingImagesUrls()
+        public Task<IReturnObject<List<string>>> GetTrendingImagesUrls()
         {
-            throw  new NotFiniteNumberException();
+            throw new NotImplementedException();
         }
+
     }
 }
